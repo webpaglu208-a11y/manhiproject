@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout | Superhero Toy Store</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="checkout-page">
+    <main class="container">
+      <a href="index.html" class="btn" style="margin-bottom: 1rem; background: #252525; color: #fff">← Back to Store</a>
+      <div class="checkout-layout">
+        <section class="checkout-card">
+          <h1>Checkout</h1>
+          <p>Complete your order securely.</p>
+          <form>
+            <input type="text" placeholder="Full Name" required />
+            <input type="email" placeholder="Email Address" required />
+            <input type="text" placeholder="Shipping Address" required />
+            <input type="text" placeholder="City" required />
+            <select required>
+              <option value="">Select Country</option>
+              <option>United States</option>
+              <option>Canada</option>
+              <option>United Kingdom</option>
+              <option>Australia</option>
+            </select>
+            <input type="text" placeholder="ZIP / Postal Code" required />
+            <button type="submit" class="btn btn-gold">Place Order</button>
+          </form>
+        </section>
+
+        <aside class="checkout-card">
+          <h2>Order Summary</h2>
+          <ul id="checkoutItems" style="list-style: none; padding: 0; display: grid; gap: 0.8rem"></ul>
+          <hr style="border-color: #323232" />
+          <p>Total <strong id="checkoutTotal">$0.00</strong></p>
+        </aside>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

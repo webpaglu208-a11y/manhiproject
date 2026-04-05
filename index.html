@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Superhero Toy Store - Premium collectibles, action figures, statues, and cosplay gear."
+    />
+    <title>Superhero Toy Store | Premium Collectibles</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="#" class="brand">Superhero Toy Store</a>
+        <button class="cart-trigger" id="cartTrigger" aria-label="Open shopping cart">
+          Cart <span id="cartCount">0</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section" id="hero">
+        <div class="carousel" id="heroCarousel">
+          <article class="slide active" style="--bg:url('https://images.unsplash.com/photo-1580480055273-228ff5388ef8?auto=format&fit=crop&w=1400&q=80')">
+            <div class="overlay"></div>
+            <div class="slide-content container">
+              <p class="kicker">Collector Grade Drop</p>
+              <h1>Premium Figures for True Superhero Fans</h1>
+              <p>From cinematic replicas to limited-run statues curated for serious collectors.</p>
+              <a href="#best-sellers" class="btn btn-gold">Shop Now</a>
+            </div>
+          </article>
+          <article class="slide" style="--bg:url('https://images.unsplash.com/photo-1578632292335-df3abbb0d586?auto=format&fit=crop&w=1400&q=80')">
+            <div class="overlay"></div>
+            <div class="slide-content container">
+              <p class="kicker">New Season Arrivals</p>
+              <h2>Build Your Legendary Shelf</h2>
+              <p>Discover elite craftsmanship with dynamic poses, premium paint, and iconic details.</p>
+              <a href="#categories" class="btn btn-gold">Explore Categories</a>
+            </div>
+          </article>
+          <article class="slide" style="--bg:url('https://images.unsplash.com/photo-1499448075715-fc0db8f99a2c?auto=format&fit=crop&w=1400&q=80')">
+            <div class="overlay"></div>
+            <div class="slide-content container">
+              <p class="kicker">Exclusive Pre-Orders</p>
+              <h2>Secure Rare Editions Before Release</h2>
+              <p>Get first access to hype collectibles and limited inventory drops.</p>
+              <a href="#faq" class="btn btn-gold">How It Works</a>
+            </div>
+          </article>
+          <div class="carousel-controls container">
+            <button id="prevSlide" aria-label="Previous slide">‹</button>
+            <button id="nextSlide" aria-label="Next slide">›</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="categories">
+        <div class="container">
+          <div class="section-head">
+            <p class="kicker">Browse by type</p>
+            <h2>Shop Categories</h2>
+          </div>
+          <div class="category-grid">
+            <article class="category-card">Action Figures</article>
+            <article class="category-card">Figures/Statues</article>
+            <article class="category-card">Katanas</article>
+            <article class="category-card">Premium Statue</article>
+            <article class="category-card">Cool Stuff</article>
+            <article class="category-card">Cosplay</article>
+            <article class="category-card">Pre-order</article>
+            <article class="category-card">New Arrivals</article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="best-sellers">
+        <div class="container">
+          <div class="section-head">
+            <p class="kicker">Collectors' choice</p>
+            <h2>Best Sellers</h2>
+          </div>
+          <div class="product-scroller" id="productScroller">
+            <article class="product-card" data-name="Iron Sentinel Mark VII" data-price="149.99">
+              <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80" alt="Iron Sentinel figure" />
+              <h3>Iron Sentinel Mark VII</h3>
+              <p>$149.99</p>
+              <button class="btn add-cart">Add to Cart</button>
+            </article>
+            <article class="product-card" data-name="Shadow Knight Deluxe" data-price="119.00">
+              <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=600&q=80" alt="Shadow Knight figure" />
+              <h3>Shadow Knight Deluxe</h3>
+              <p>$119.00</p>
+              <button class="btn add-cart">Add to Cart</button>
+            </article>
+            <article class="product-card" data-name="Amazon Prime Defender" data-price="169.50">
+              <img src="https://images.unsplash.com/photo-1581235720704-06d3acfcb36f?auto=format&fit=crop&w=600&q=80" alt="Amazon defender statue" />
+              <h3>Amazon Prime Defender</h3>
+              <p>$169.50</p>
+              <button class="btn add-cart">Add to Cart</button>
+            </article>
+            <article class="product-card" data-name="Web Hunter 1/6 Scale" data-price="135.00">
+              <img src="https://images.unsplash.com/photo-1593789198777-f29bc259780e?auto=format&fit=crop&w=600&q=80" alt="Web Hunter figure" />
+              <h3>Web Hunter 1/6 Scale</h3>
+              <p>$135.00</p>
+              <button class="btn add-cart">Add to Cart</button>
+            </article>
+            <article class="product-card" data-name="Omega Titan Bust" data-price="199.00">
+              <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=600&q=80" alt="Omega Titan bust" />
+              <h3>Omega Titan Bust</h3>
+              <p>$199.00</p>
+              <button class="btn add-cart">Add to Cart</button>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="brands">
+        <div class="container">
+          <div class="section-head">
+            <p class="kicker">Trusted makers</p>
+            <h2>Featured Brands</h2>
+          </div>
+          <div class="brand-grid">
+            <div class="brand-item">ZD Toys</div>
+            <div class="brand-item">NECA Toys</div>
+            <div class="brand-item">Fondjoy</div>
+            <div class="brand-item">CT Toys</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="social-wall">
+        <div class="container">
+          <div class="section-head">
+            <p class="kicker">Community showcase</p>
+            <h2>UGC Collab Social Wall</h2>
+          </div>
+          <div class="ugc-grid">
+            <figure class="ugc-tile tall"><img src="https://images.unsplash.com/photo-1542751110-97427bbecf20?auto=format&fit=crop&w=900&q=80" alt="Collector shelf setup" /></figure>
+            <figure class="ugc-tile"><img src="https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?auto=format&fit=crop&w=900&q=80" alt="Unboxing video still" /></figure>
+            <figure class="ugc-tile"><img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80" alt="Cosplay collaboration" /></figure>
+            <figure class="ugc-tile wide"><img src="https://images.unsplash.com/photo-1511884642898-4c92249e20b6?auto=format&fit=crop&w=1200&q=80" alt="Behind the scenes collab" /></figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="testimonials">
+        <div class="container">
+          <div class="section-head">
+            <p class="kicker">Client feedback</p>
+            <h2>Testimonials</h2>
+          </div>
+          <div class="testimonial-grid">
+            <article class="testimonial-card">
+              <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=150&q=80" alt="Reviewer Mia" />
+              <h3>Mia R.</h3>
+              <p class="stars">★★★★★</p>
+              <p>Packaging was elite. My statue arrived flawless and even better than preview photos.</p>
+            </article>
+            <article class="testimonial-card">
+              <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=150&q=80" alt="Reviewer Jordan" />
+              <h3>Jordan K.</h3>
+              <p class="stars">★★★★★</p>
+              <p>Best collector store experience online. Smooth checkout and fast shipping updates.</p>
+            </article>
+            <article class="testimonial-card">
+              <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=150&q=80" alt="Reviewer Lena" />
+              <h3>Lena T.</h3>
+              <p class="stars">★★★★★</p>
+              <p>The pre-order flow is transparent and the quality of items is always top-tier.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="faq">
+        <div class="container">
+          <div class="section-head">
+            <p class="kicker">Need help?</p>
+            <h2>FAQ</h2>
+          </div>
+          <div class="faq-list">
+            <details>
+              <summary>How long does shipping take?</summary>
+              <p>Orders dispatch within 1-2 business days. Standard shipping typically arrives in 3-7 business days.</p>
+            </details>
+            <details>
+              <summary>Are your products official and licensed?</summary>
+              <p>Yes, all items are sourced from trusted brand partners and verified distributors.</p>
+            </details>
+            <details>
+              <summary>Can I cancel a pre-order?</summary>
+              <p>Pre-orders can be canceled before warehouse processing begins. Contact support with your order ID.</p>
+            </details>
+            <details>
+              <summary>Do you ship internationally?</summary>
+              <p>Yes, we offer international shipping with tracking. Delivery timelines vary by destination.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="why-us">
+        <div class="container">
+          <div class="section-head">
+            <p class="kicker">Premium promise</p>
+            <h2>Why Choose Us</h2>
+          </div>
+          <div class="why-grid">
+            <article><span>✅</span><h3>Official Items</h3><p>100% authentic collectibles from reputed brands.</p></article>
+            <article><span>📦</span><h3>Secure Packaging</h3><p>Damage-safe wrapping built for collector condition.</p></article>
+            <article><span>🚚</span><h3>Fast Shipping</h3><p>Prompt dispatch with end-to-end tracking.</p></article>
+            <article><span>🎯</span><h3>Collector Support</h3><p>Dedicated help for pre-orders, customs, and replacements.</p></article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <h3>About</h3>
+          <p>Superhero Toy Store is a premium destination for action figures, statues, and collector essentials.</p>
+        </div>
+        <div>
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="#best-sellers">Best Sellers</a></li>
+            <li><a href="checkout.html">Checkout</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Policies</h3>
+          <ul>
+            <li><a href="#">Shipping Policy</a></li>
+            <li><a href="#">Refund Policy</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Newsletter Signup</h3>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email" aria-label="email" />
+            <button type="submit" class="btn btn-gold">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </footer>
+
+    <aside class="cart-sidebar" id="cartSidebar" aria-hidden="true">
+      <div class="cart-header">
+        <h3>Your Cart</h3>
+        <button id="closeCart" aria-label="Close cart">✕</button>
+      </div>
+      <div id="cartItems" class="cart-items"></div>
+      <div class="cart-footer">
+        <p>Total: <strong id="cartTotal">$0.00</strong></p>
+        <a class="btn btn-gold" href="checkout.html">Proceed to Checkout</a>
+      </div>
+    </aside>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
